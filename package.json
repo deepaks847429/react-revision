@@ -1,0 +1,28 @@
+{
+  "name": "react-revision",
+  "version": "1.0.0",
+  "description": "this is revision of react",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "Deepak",
+    "kumar"
+  ],
+  "author": "Deepak kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "not < 2%",
+    "not ie <= 11"
+  ]
+}
