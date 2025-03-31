@@ -1,25 +1,23 @@
 import React from 'react';
-import ReactDOM from ReactDOM;
+import ReactDOM from 'react-dom/client';
 
-/*
+const heading= React.createElement("h1", {id:"heading"}, "Hello World from React!");
+console.log(heading);
 
-<div id="parent">
-<div id="child">
-  <h1>hello world from react</h1>
-</div>
-</div>
-*/
+// JSX - Not html in js, HTML- LIKE syntax
+const jsxheading1=  <h1 id="heading1"> Deepak is learning React</h1>
+console.log(jsxheading1);
 
-const parent=React.createElement("div", {id:parent},  React.createElement("div", {id: "child"}, React.createElement("h1", {}, "hello world from react")));
-
-const parent1=React.createElement("div", {id:parent}, React.createElement("div", {id: "child"}, React.createElement("h1", {}, "hello world from react")));
-
-
-const heading=React.createElement(
-  "h1",
-  {id: "heading"},
-  "hello world from react"
-);
-console.log(parent1); // return object
+// React component
+// class based component, functional component
+const Title=()=>{
+  return <h1> Namaste react functional component 1</h1>;
+}
+// component composition
+const HeadingCopmponent=()=>{
+  return  (<div> 
+    <Title/>
+    {100+200}
+    <h1> Namaste react functional component</h1> </div>)}; 
 const root= ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent1); 
+root.render(<HeadingCopmponent />);
